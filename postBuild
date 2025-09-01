@@ -1,2 +1,0 @@
-#!/bin/bash
-${NB_PYTHON_PREFIX}/bin/R -e "IRkernel::installspec(user = FALSE)"
