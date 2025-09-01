@@ -11,7 +11,7 @@ Sys.setenv("R_BIOC_VERSION" = "3.22")
 options(repos = c(CRAN = "https://packagemanager.posit.co/cran/__linux__/jammy/2025-07-01"))
 
 
-install.packages("IRkernel")
+install.packages("IRkernel", type = "binary")
 
 IRkernel::installspec()
 
@@ -24,6 +24,7 @@ BiocManager::install(
     "tidyverse", "cli", "imcRtools", "dittoSeq", "flowSOM",
     "scater", "bluster", "batchelor", "scran", "ConsensusClusterPlus",
     "virdis", "mclust", "SpatialDatasets"
-  )
+  ),
+  type = "binary"
 )
 
