@@ -1,3 +1,2 @@
 #!/bin/bash
-source activate -p ${CONDA_DEFAULT_ENV}
-R -e "IRkernel::installspec(user = FALSE)"
+${NB_PYTHON_PREFIX}/bin/R -e "IRkernel::installspec(user = FALSE)"
