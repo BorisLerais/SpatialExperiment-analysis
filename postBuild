@@ -1,2 +1,2 @@
-#!/bin/bash
-R -e "IRkernel::installspec(user = FALSE)"
+# Use conda run to execute R in the correct environment
+conda run -n ${CONDA_DEFAULT_ENV} R -e "IRkernel::installspec(user = FALSE)"
