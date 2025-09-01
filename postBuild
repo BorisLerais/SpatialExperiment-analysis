@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Register R kernel with Jupyter
+R -e "IRkernel::installspec(user = FALSE)"

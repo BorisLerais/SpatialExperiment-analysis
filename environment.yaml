@@ -1,0 +1,25 @@
+name: SpatialExperiment Analysis
+
+channels:
+  - conda-forge
+  - bioconda      # Essential for Bioconductor packages
+  - r             # For additional R packages
+dependencies:
+  - r-base=4.3
+  - r-irkernel
+  
+  # Standard R packages (prefix with r-)
+  - r-tidyverse
+  - r-cli
+  - r-viridis
+  - r-mclust
+
+  - bioconductor-imcRtools
+  - bioconductor-dittoSeq
+  - bioconductor-flowSOM
+  - bioconductor-scater
+  - bioconductor-bluster
+  - bioconductor-batchelor
+  - bioconductor-scran
+  - bioconductor-ConsensusClusterPlus
+  - bioconductor-SpatialDatasets
